@@ -17,15 +17,15 @@ https://sitehub.es/curso2025-26/dam1/spotify/authors.json
 - Se pide usar como cliente Retrofit (se tiene que añadir al proyecto).
 
 ## Ejercicio 04
-- Se pide añadir una única instancia de memoria en la feature: songs
-- Se pide añadir una única instancia de memoria en la feature: authors
+- a) Se pide añadir una única instancia de memoria en la feature: songs
+- b) Se pide añadir una única instancia de memoria en la feature: authors
 
 ## Ejercicio 05
-- Se pide crear el caso de uso que me permita guardar songs.
-- Se pide crear el caso de uso que me permita guardar authors.
+- a) Se pide crear el caso de uso que me permita guardar songs.
+- b) Se pide crear el caso de uso que me permita guardar authors.
 
 ## Ejercicio 06
-- Se pide crear el caso de uso que me permita eliminar una canción.
-- Se pide crear el caso de uso que me permita eliminar un autor.
-- Se pide crear el caso de uso que me permita eliminar un album
+- a) Se pide crear el caso de uso que me permita eliminar una canción.
+- b) Se pide crear el caso de uso que me permita eliminar un autor.
+- c) Se pide crear el caso de uso que me permita eliminar un album
 

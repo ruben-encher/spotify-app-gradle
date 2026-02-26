@@ -3,36 +3,18 @@ package edu.iesam.features.albums.data;
 import edu.iesam.features.albums.domain.Album;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AlbumMemLocalDataSource {
 
-    private static AlbumMemLocalDataSource instance = null;
+    private List<Album> albums = new ArrayList<>();
 
-    private ArrayList<Album> storage = new ArrayList<>();
-
-    private AlbumMemLocalDataSource() {
-        initData();
+    public AlbumMemLocalDataSource() {
+        albums.add(new Album(1, "Thriller", 1982));
+        albums.add(new Album(2, "Back in Black", 1980));
     }
 
-    private void initData(){
-        Album album = new Album("1","album1", "2000");
-        storage.add(album);
-    }
-
-    public ArrayList<Album> findAll(){
-        return storage;
-    }
-
-    public void save(Album album){
-        storage.add(album);
-        System.out.println(album);
-    }
-
-    public static AlbumMemLocalDataSource newInstance(){
-        if (instance == null){
-            instance = new AlbumMemLocalDataSource();
-        }
-
-        return instance;
+    public List<Album> getAlbums() {
+        return albums;
     }
 }

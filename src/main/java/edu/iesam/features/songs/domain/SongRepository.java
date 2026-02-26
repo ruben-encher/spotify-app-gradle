@@ -4,4 +4,7 @@ import java.util.ArrayList;
 
 public interface SongRepository {
     public ArrayList<Song> findAll();
+
+
+    void saveSong(Song song);
 }

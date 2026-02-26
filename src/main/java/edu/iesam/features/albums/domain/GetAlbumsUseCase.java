@@ -1,17 +1,16 @@
 package edu.iesam.features.albums.domain;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class GetAlbumsUseCase {
 
-    private AlbumRepository albumRepository;
+    private AlbumRepository repository;
 
-    public GetAlbumsUseCase(AlbumRepository albumRepository) {
-        this.albumRepository = albumRepository;
+    public GetAlbumsUseCase(AlbumRepository repository) {
+        this.repository = repository;
     }
 
-    public ArrayList<Album> execute(){
-        return albumRepository.getAlbums();
+    public List<Album> execute() {
+        return repository.getAlbums();
     }
-
 }

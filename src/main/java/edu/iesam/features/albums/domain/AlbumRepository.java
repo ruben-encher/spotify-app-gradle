@@ -1,9 +1,7 @@
 package edu.iesam.features.albums.domain;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface AlbumRepository {
-
-    ArrayList<Album> getAlbums();
-    void saveAlbum(Album album);
+    List<Album> getAlbums();
 }

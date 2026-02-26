@@ -4,22 +4,18 @@ import edu.iesam.features.albums.domain.Album;
 import edu.iesam.features.albums.domain.AlbumRepository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AlbumDataRepository implements AlbumRepository {
 
-    private AlbumMemLocalDataSource albumMemLocalDataSource;
+    private AlbumMemLocalDataSource dataSource;
 
-    public AlbumDataRepository(AlbumMemLocalDataSource albumMemLocalDataSource) {
-        this.albumMemLocalDataSource = albumMemLocalDataSource;
+    public AlbumDataRepository(AlbumMemLocalDataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
     @Override
-    public ArrayList<Album> getAlbums() {
-        return albumMemLocalDataSource.findAll();
-    }
-
-    @Override
-    public void saveAlbum(Album album) {
-        albumMemLocalDataSource.save(album);
+    public List<Album> getAlbums() {
+        return dataSource.getAlbums();
     }
 }

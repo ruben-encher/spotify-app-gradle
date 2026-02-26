@@ -7,4 +7,6 @@ public interface SongRepository {
 
 
     void saveSong(Song song);
+
+    void deleteSong(int id);
 }

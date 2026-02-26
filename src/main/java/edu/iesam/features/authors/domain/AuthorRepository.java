@@ -5,4 +5,6 @@ import java.util.ArrayList;
 public interface AuthorRepository {
 
     void saveAuthor(Author author);
+
+    void deleteAuthor(int id);
 }

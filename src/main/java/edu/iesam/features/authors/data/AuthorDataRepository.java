@@ -7,18 +7,14 @@ import java.util.ArrayList;
 
 public class AuthorDataRepository implements AuthorRepository {
 
-    private AuthorMemLocalDataSource authorMemLocalDataSource;
-    private AuthorApiLocalDataSource authorApiLocalDataSource;
+    private AuthorMemLocalDataSource dataSource;
 
-    public AuthorDataRepository(AuthorMemLocalDataSource authorMemLocalDataSource,
-                                AuthorApiLocalDataSource authorApiLocalDataSource) {
-        this.authorMemLocalDataSource = authorMemLocalDataSource;
-        this.authorApiLocalDataSource = authorApiLocalDataSource;
+    public AuthorDataRepository(AuthorMemLocalDataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
-
     @Override
-    public ArrayList<Author> getAuthors() {
-        return authorMemLocalDataSource.findAll();
+    public void saveAuthor(Author author) {
+        dataSource.save(author);
     }
 }

@@ -7,9 +7,9 @@ import java.util.List;
 
 public class AuthorMemLocalDataSource {
 
-    private List<Author> authors = new ArrayList<>();
+    public List<Author> authors = new ArrayList<>();
 
-    public void save(Author author) {
+    public void addAuthor(Author author) {
         authors.add(author);
     }
 

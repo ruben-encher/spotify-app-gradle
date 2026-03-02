@@ -16,4 +16,8 @@ public class AuthorMemLocalDataSource {
     public List<Author> getAuthors() {
         return authors;
     }
+
+    public void save(Author author) {
+
+    }
 }

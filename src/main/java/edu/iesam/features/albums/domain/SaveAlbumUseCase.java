@@ -10,6 +10,7 @@ public class SaveAlbumUseCase {
     }
 
     public void execute(Album album){
+
         albumRepository.saveAlbum(album);
     }
 }

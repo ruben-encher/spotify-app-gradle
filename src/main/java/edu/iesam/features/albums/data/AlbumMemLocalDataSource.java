@@ -17,4 +17,7 @@ public class AlbumMemLocalDataSource {
     public List<Album> getAlbums() {
         return albums;
     }
+
+    public void save(Album album) {
+    }
 }

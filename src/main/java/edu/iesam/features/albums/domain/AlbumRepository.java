@@ -6,4 +6,8 @@ public interface AlbumRepository {
     List<Album> getAlbums();
 
     void deleteAlbum(int id);
+
+    void saveAlbum(Album album);
+
+    void saveAuthor(Album album);
 }

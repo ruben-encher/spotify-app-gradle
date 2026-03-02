@@ -27,4 +27,14 @@ public class SongDataRepository implements SongRepository {
 
         return songs;
     }
+
+    @Override
+    public void saveSong(Song song) {
+
+    }
+
+    @Override
+    public void deleteSong(int id) {
+
+    }
 }

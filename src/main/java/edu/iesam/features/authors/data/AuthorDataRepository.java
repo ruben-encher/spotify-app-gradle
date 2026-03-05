@@ -3,6 +3,8 @@ package edu.iesam.features.authors.data;
 import edu.iesam.features.authors.domain.Author;
 import edu.iesam.features.authors.domain.AuthorRepository;
 
+import java.util.ArrayList;
+
 public class AuthorDataRepository implements AuthorRepository {
 
     private AuthorMemLocalDataSource dataSource;
@@ -19,5 +21,10 @@ public class AuthorDataRepository implements AuthorRepository {
     @Override
     public void deleteAuthor(int id) {
 
+    }
+
+    @Override
+    public ArrayList<Author> getAuthors() {
+        return null;
     }
 }

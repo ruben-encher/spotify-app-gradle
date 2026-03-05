@@ -1,9 +1,10 @@
 package edu.iesam.features.albums.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface AlbumRepository {
-    List<Album> getAlbums();
+    ArrayList<Album> getAlbums();
 
     void deleteAlbum(int id);
 
